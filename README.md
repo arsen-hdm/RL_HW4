@@ -2,6 +2,12 @@
 
 Hi, this is the repository for the HM4 of the course 'Robotics Lab'. In this final homework we will see a new mobile robot and we'll use the Nav2 functionalities, also with their Simple Commander API, but also the SLAM algoritm and more.
 To have a complete vision of what is done here and why check as always the ppt file, that contains also many videos of the functionalities tests ;)!
+But because the ppt has many videos this time I can't upload it so I'll share with you the link to visualize it:
+```bash
+https://www.canva.com/design/DAGdsNvesFQ/IR5iDEaJDHlEZPiQIk3t6A/view?utm_content=DAGdsNvesFQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0b19a66833
+```
+
+The pages you need to check for this project are from the 96 to the end.
 
 To start, you'll need this repository on your computer, so get it by:
 ```bash
