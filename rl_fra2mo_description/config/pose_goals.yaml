@@ -1,0 +1,29 @@
+goals:
+  goal_1:
+    - position:
+        x: 0.0
+        y: 3.0
+      orientation:
+        Z: 0.0
+        W: 1.0
+  goal_2:
+    - position:
+        x: 6.0
+        y: 4.0
+      orientation:
+        Z: 0.2588
+        W: 0.9659
+  goal_3:
+    - position:
+        x: 6.5
+        y: -1.4
+      orientation:
+        Z: 1.0
+        W: 0.0
+  goal_4:
+    - position:
+        x: -1.6
+        y: -2.5
+      orientation:
+        Z: 0.6088
+        W: 0.7937
