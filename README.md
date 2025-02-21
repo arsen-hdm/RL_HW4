@@ -39,6 +39,9 @@ ros2 run rl_fra2mo_description follow_waypoints.py
 
 Remember that the desired coordinates are in the config directory in a yaml file, you'll recognize it. And also remember that in the follow_waypoints file the desired goal are switched in the first section, so modify it appropriately to have the movement that you expect ;)
 
+### Mapping the environment
+You can for sure explore your map and after that memorize the map, you have only to chose how do you want to do it! You may start the gazebo environmeng and launch the explore py file with the follow way point, like done before in this readme file. You may go inside the explore launch file and activate the explore node, which autonomously explores the environment (so you don't need to start the follow way point. Or you can teleop the robot manually trought the map and explore everything until you have all the map completed!
+
 For now it'all but soon I'll add the other part of this HW. See you soon ;)
 
 Thanks for the attention, you can find also other homeworks in my personal repositories!
