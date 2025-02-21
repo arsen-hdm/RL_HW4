@@ -1,1 +1,38 @@
-# RL_HW4
+# HM4 RL 24/25 Arsen Hudyma
+
+Hi, this is the repository for the HM4 of the course 'Robotics Lab'. In this final homework we will see a new mobile robot and we'll use the Nav2 functionalities, also with their Simple Commander API, but also the SLAM algoritm and more.
+To have a complete vision of what is done here and why check as always the ppt file, that contains also many videos of the functionalities tests ;)!
+
+To start, you'll need this repository on your computer, so get it by:
+```bash
+git clone https://github.com/arsen-hdm/RL_HM4.git
+```
+
+Then, once you're in the dockek container, firstly:
+```bash
+colcon build
+. install/setup.bash
+```
+
+### Simulation in gazebo
+The first point of this HW ask us to work in gazebo, and in detail to change the spawning pose of the robot, add and move and obstacle and also to add an aruco tag, to visualize the results start the gazebo simulation by:
+```bash
+ros2 launch rl_fra2mo_description gazebo_fra2mo.launch.py
+```
+
+### Making the robot move
+After the robot is spawned it gazebo we don't want simply to watch it, we want it to move, so you'll need to run this command that set up all the Nav2 thing that we need:
+```bash
+ros2 launch rl_fra2mo_description fra2mo_explore.launch.py
+```
+
+Then, to start sending the commands you have to run this:
+```bash
+ros2 run rl_fra2mo_description follow_waypoints.py
+```
+
+Remember that the desired coordinates are in the config directory in a yaml file, you'll recognize it. And also remember that in the follow_waypoints file the desired goal are switched in the first section, so modify it appropriately to have the movement that you expect ;)
+
+For now it'all but soon I'll add the other part of this HW. See you soon ;)
+
+Thanks for the attention, you can find also other homeworks in my personal repositories!
