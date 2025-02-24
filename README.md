@@ -53,6 +53,18 @@ ros2 run nav2_map_server map_saver_cli -f map
 ```
 where map is the name of the png output file (remember to add and cd to a maps folder inside your package).
 
-For now it'all but soon I'll add the other part of this HW. See you soon ;)
+### Vision task
+If you've read the canva presentation, then you know that I've had some troubles at a certain point with aruco and so on, so I tried to "fake" this task, to see however how it would work.
+To test it, firstly launch the gazebo launch file and also the explore one (without the explore node). Then you have to launch the new vision_goal.py script, by:
+```bash
+ros2 run rl_fra2mo_description vision_goal.py
+```
 
-Thanks for the attention, you can find also other homeworks in my personal repositories!
+Once the robot arrives near the aruco tag you can fake an aruco individuation, by this command:
+```bash
+ros2 topic pub /aruco_single/pose geometry_msgs/PoseStamped "{ header: { frame_id: 'map', stamp: {sec: 0, nanosec: 0}}, pose: { position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 0.0}}}"
+```
+
+So that the code will think that an aruco tag is being visualized, then the robot will return to the initial pose.
+
+I think that for now it's over so, thanks for the attention, and you can find also other homeworks in my personal repositories!
